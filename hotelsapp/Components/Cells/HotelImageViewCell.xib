@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelImageViewCell" rowHeight="224" id="4eQ-3x-fQ4" customClass="HotelImageViewCell" customModule="hotelsapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4eQ-3x-fQ4" id="a8n-7z-lTW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OZd-9z-DFr" customClass="CachedImageView" customModule="hotelsapp" customModuleProvider="target">
+                        <rect key="frame" x="147" y="52" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="pPB-D5-oGe"/>
+                            <constraint firstAttribute="width" constant="120" id="tQl-1e-XmD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OZd-9z-DFr" firstAttribute="centerY" secondItem="a8n-7z-lTW" secondAttribute="centerY" id="kqq-uI-NzA"/>
+                    <constraint firstItem="OZd-9z-DFr" firstAttribute="centerX" secondItem="a8n-7z-lTW" secondAttribute="centerX" id="pEp-gf-Bo4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hotelImageView" destination="OZd-9z-DFr" id="kbo-BB-WGA"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
